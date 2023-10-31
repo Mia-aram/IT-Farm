@@ -4,20 +4,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/img/home/qqq.jpg');
-    /* background-image: linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('/img/home/qqq.jpg'); */
-    background-size: cover; /* 배경 이미지 크기 조절 */
-    background-position: center; /* 배경 이미지 중앙 정렬 */
-    background-repeat: no-repeat; /* 배경 이미지 반복 제거 */
+    /* background-color: white; 배경색 초록색 */
+    background-image: url('/img/home/background.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
 }
 
 .homeWrapper {
     width: 30%;
-    height: 50%;
+    height: 70%;
+    height: 100vh;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.2);
+    gap:50px;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 @media (max-width: 767px){
@@ -32,7 +34,6 @@
     }
 }
 
-
 .titleContainer {
     display: flex;
     flex-direction: column;
@@ -40,18 +41,15 @@
     justify-content: center;
     align-items: center;
     height: 40%;
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
 }
 
 .logo{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35%;
-    height: 100%;
-    margin-top: 50px;
+    width: 80%;
+    height: 160%;
+    /* margin-top: 50px; */
 }
 
 @media (max-width: 767px){
@@ -62,12 +60,8 @@
 
 @media (max-width: 480px){
     .logo{
-        width: 45%;
+        width: 35%;
     }
-}
-
-.logoTitle{
-    font-size: 35px;
 }
 
 @media (max-width:767px){
@@ -81,18 +75,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    height: 60%;
+    gap: 20px;
+    height: 70%;
 }
 
 .selectButton{
-    width: 60%;
-    height: 20%;
-    font-size: 35px;
+    width: 40%;
+    height: 30%;
+    font-size: 30px;
     cursor: pointer;
     border-radius: 5px;
-    font-family: 'SBAggroB', sans-serif;
+    font-family: 'Pretendard-Regular';
     transition: all 0.2s;
+    border: 1px;
+    background-color: #00662E;
+    color: white;
+
 }
 
 @media (max-width: 767px){
@@ -116,8 +114,6 @@
     }
 }
 
-
-
 .selectButton:hover {
     transform: scale(1.1);
 }
@@ -126,9 +122,9 @@
     transform: scale(1.0);
 }
 
-@font-face {
-    font-family: 'SBAggroB';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
-    font-weight: normal;
+@@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
 }
