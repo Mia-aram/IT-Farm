@@ -18,7 +18,7 @@ export default function RegisterPageUI (props:IRegisterPageUIProps):JSX.Element 
                   {!props.isLogin && <input value={props.nickName} onChange={props.onChangeNickName} className={styles.input} type="text" placeholder="NickName" />}
                   <input value={props.email} onChange={props.onChangeEmail} className={styles.input} type="email" placeholder="Email" />
                   <input value= {props.password} onChange={props.onChangePassword} className={styles.input} type="password" placeholder="Password" />
-                  {props.isLogin? <button  className={styles.button}>로그인</button> : <button  className={styles.button}>회원가입</button>}
+                  {props.isLogin? <button onClick={props.submitLogin} className={styles.button}>로그인</button> : <button onClick={props.submitRegister}  className={styles.button}>회원가입</button>}
                 </div>
               </div>
               <div className={styles.overlayContainer}>

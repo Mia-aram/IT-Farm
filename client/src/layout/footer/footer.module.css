@@ -1,0 +1,30 @@
+.body {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    z-index: 999;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid lightgrey;
+    background-color: white;
+}
+
+@media (min-width: 481px){
+    .body {
+        display: none;
+    }
+}
+
+.iconBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerIcon {
+    font-size: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}

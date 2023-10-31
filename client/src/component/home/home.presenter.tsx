@@ -13,7 +13,7 @@ export function HomePageUI (props:IHomePageUIProps):JSX.Element {
                     </div>
                 </div>
                 <div className={styles.buttonContainer}>
-                    <button className={styles.selectButton}>사러왔어요</button>
+                    <button onClick={props.onCLickCustom} className={styles.selectButton}>사러왔어요</button>
                     <button onClick={props.onClickAdmin} className={styles.selectButton}>판매할래요</button>
                 </div>
             </div> */}

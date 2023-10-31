@@ -1,3 +1,4 @@
 export interface IHomePageUIProps {
-    onClickAdmin : () => void
+    onClickAdmin : () => void;
+    onCLickCustom : () => void;
 }

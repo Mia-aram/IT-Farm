@@ -1,0 +1,419 @@
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 480px){
+    .bannerVisible{
+        display: none;
+    }
+}
+
+.bannerContainer {
+    width: 100%;
+    margin-top: 120px;
+    height: 300px;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .bannerContainer{
+        height: 400px;
+    }
+    
+}
+
+.bannerImg {
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        margin-top: 120px;
+    }
+}
+
+.main {
+    width: 80%;
+    display: flex;
+    gap: 3%;
+}
+
+@media (max-width: 480px) {
+    .main{
+        flex-direction: column;
+    }
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+}
+
+@media (max-width: 480px) {
+    .container1{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.iconContainer{
+    display: flex;
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 25px 30px;
+    cursor: pointer;
+}
+
+.iconContainer > :last-child {
+    border: none;
+  }
+
+@media (max-width: 480px) {
+    .iconContainer {
+        padding: 25px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .iconContainer {
+        flex-wrap: wrap;
+        height: 240px;
+    }
+    
+}
+
+.iconBox{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width:480px) {
+    .iconBox{
+        width: 20%;
+        border: none;
+    }
+}
+
+.iconImgBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.iconImg {
+    font-size: 30px;
+}
+
+.iconInfoBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.recipeContainer{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 320px;
+    padding: 20px 30px;
+}
+
+@media (max-width: 480px) {
+    .recipeContainer{
+        height: 570px;
+    }
+}
+
+.recipeTitle {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+    .recipeTitle{
+        font-size: 22px;
+    }
+}
+
+.recipeContentContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+@media (max-width: 480px) {
+    .recipeContentContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.recipeBox{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 200px;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .recipeBox{
+        height: 220px;
+    }
+}
+
+.recipeImg{
+    border-radius: 8px;
+    width: 100%;
+    height: 75%;
+}
+
+.recipeContent{
+    font-size: 18px;
+}
+
+@media (max-width:480px) {
+    .recipeContent {
+        font-size: 16px;
+    }
+    
+}
+
+.plus{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 50px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: normal;
+}
+
+.sectionContainer {
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+    height: 50px;
+    align-items: center;
+    padding: 0 30px;
+    position: relative;
+}
+
+@media (max-width: 480px) {
+    .sectionContainer{
+        font-size: 22px;
+    }
+}
+
+.sectionPlus {
+    position: absolute;
+    font-size: 14px;
+    display: flex;
+    right: 30px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.noticeContainer{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px 30px;
+}
+
+.noticeBox{
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+}
+
+.noticeContent {
+    font-size: 18px;
+    width: 80%;
+}
+
+@media (max-width:480px) {
+    .noticeContent{
+        width: 75%;
+        font-size: 15px;
+    }
+}
+
+.noticeDate {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 20%;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+@media (max-width:480px) {
+    .noticeDate {
+        width: 25%;
+        font-size: 12px;
+    }
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 27%;
+}
+
+@media (max-width: 480px) {
+    .container2{
+        width: 100%;
+    }
+}
+
+.greetContainer {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 240px;
+    padding: 30px 30px;
+}
+
+.greetInfoBox {
+    height: 50%;
+    font-size: 20px;
+}
+
+.greetButton{
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(12, 127, 228);
+    border: none;
+    border-radius: 8px;
+    height: 40%;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.greetButton:hover{
+    transform: scale(1.1);
+}
+
+.greetButton:active{
+    transform: scale(1.0);
+}
+
+.greetContainer2{
+    height: 170px;
+    background-color: #FFF9E5;
+    border-radius: 8px;
+    padding: 30px 30px;
+    cursor: pointer;
+}
+
+.greet2Box{
+    display: flex;
+}
+
+.greet2Icon {
+    font-size: 120px;
+    color : rgb(255, 213, 87);
+}
+
+.greet2InfoBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+    padding: 10px 0;
+}
+
+.greet2InfoTitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.greet2InfoContent {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    padding: 20px 30px;
+    border-top: 1px solid lightgrey;
+    margin-top: 100px;
+}
+
+@media (max-width:480px) {
+    .footerContainer{
+        height: 200px;
+    }
+}
+
+.footerBox{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 40px;
+    color: #00000099;
+}
+
+.footerMediumStyle {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+@media (max-width:480px){
+    .footerMediumStyle{
+        font-size: 13px;
+    }
+}
+
+.footerLageStyle{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media (max-width:480px){
+    .footerLageStyle{
+        font-size: 14px;
+    }
+}
+
+.footerSmallStyle{
+    font-size: 13px;
+}
+
+@media (max-width: 480px) {
+    .footerSmallStyle{
+        font-size: 11px;
+    }
+    
+}

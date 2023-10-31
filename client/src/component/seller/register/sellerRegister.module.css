@@ -1,0 +1,169 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 50px 100px;
+    gap: 40px;
+}
+
+@media (max-width: 480px) {
+    .wrapper{
+        padding: 0;
+    }
+}
+
+.registerTitle{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .registerTitle {
+        font-size: 40px;
+    }
+}
+
+.registerSection1{
+    height: 250px;
+    display: flex;
+}
+
+.registerBox{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.registerInputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 50%;
+}
+
+.registerInputTitle{
+    font-size: 25px;
+}
+
+@media (max-width: 480px) {
+    .registerInputTitle{
+        font-size: 20px;
+    }
+}
+
+.registerInput {
+    border: 1px solid lightgray;
+    height: 30px;
+    width: 50%;
+}
+
+@media (max-width: 480px) {
+    .registerInput{
+        font-size: 12px;
+    }
+}
+
+.registerInputForm{
+    display: flex;
+    gap: 15px;
+}
+
+.error {
+    font-size: 15px;
+    color: red;
+}
+
+@media (max-width:480px) {
+    .error{
+        font-size: 14px;
+    }
+}
+
+.registerSection2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.registerNum{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+}
+
+@media (max-width:480px) {
+    .registerNum{
+        height: 40px;
+    }
+}
+
+.searchButton {
+    width: 50px;
+    height: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.searchButton:hover {
+    transform: scale(1.1);
+}
+
+.searchButton:active {
+    transform: scale(1.0);
+}
+
+.reigsterAddress1{
+    width: 550px;
+    height: 30px;
+    font-size: 20px;
+}
+
+@media (max-width:480px) {
+    .reigsterAddress1{
+        height: 40px;
+    }
+}
+
+.reigsterAddress2{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+}
+
+@media (max-width: 480px) {
+    .reigsterAddress2{
+        height: 40px;
+    }
+}
+
+.submitContainer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submitButton{
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.2s;
+}
+
+.submitButton:hover{
+    transform: scale(1.1);
+}
+
+.submitButton:active{
+    transform: scale(1.0);
+}

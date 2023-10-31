@@ -6,6 +6,8 @@ export interface IRegisterPageUIProps {
     onChangePassword : (event: ChangeEvent<HTMLInputElement>) => void;
     onClickLoginState : () => void;
     onClickMoveHome : () => void;
+    submitLogin : () => void;
+    submitRegister : () => void;
     isLogin : boolean;
     nickName : string;
     email : string;
