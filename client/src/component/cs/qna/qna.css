@@ -1,0 +1,23 @@
+.qnaBody {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.qnaWrapper {
+    display: flex;
+    justify-content: center;
+    width: 1230px;
+    height: 100vh;
+}
+
+.titleContainer {
+    display: flex;
+    height: 194px;
+}
+
+.title {
+    margin-top: 105;
+    margin-bottom: 40
+}
