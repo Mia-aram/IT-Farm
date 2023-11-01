@@ -10,7 +10,7 @@ export function HomePageUI (props:IHomePageUIProps):JSX.Element {
                     <img src='/img/home/logo_2green2.png' className={styles.logo} />
                 </div>
                 <div className={styles.buttonContainer}>
-                    <button className={styles.selectButton}>사러왔어요</button>
+                    <button className={styles.selectButton}>사러왔어요.</button>
                     <button onClick={props.onClickAdmin} className={styles.selectButton}>팔러왔어요</button>
                 </div>
                 
