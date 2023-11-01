@@ -34,6 +34,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # 생성한 앱
     'users',
+    'farms',
+    'product',
 
     "django.contrib.admin",
     "django.contrib.auth",
@@ -165,9 +167,4 @@ SIMPLE_JWT = {
 
 AUTHENTICATION_CLASSES = [
     'rest_framework_simplejwt.authentication.JWTAuthentication',
-]
-
-AUTHENTICATION_BACKENDS = [
-    'users.backends.EmailBackend',
-    'django.contrib.auth.backends.ModelBackend',
 ]

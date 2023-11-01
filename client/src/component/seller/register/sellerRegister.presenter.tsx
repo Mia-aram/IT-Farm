@@ -31,10 +31,6 @@ export default function SellerRegisterPageUI(props:ISellerRegisterPageUIProps):J
                             <input className={styles.registerInput} type='text'/>
                             <span className={styles.error}>재식수량을 입력해주세요.</span>
                         </div>
-                    </div>
-                </div>
-                <div className={styles.registerSection1}>
-                    <div className={styles.registerBox}>
                         <div className={styles.registerInputBox}>
                             <span className={styles.registerInputTitle}>재배방법</span>
                             <Select
@@ -47,52 +43,6 @@ export default function SellerRegisterPageUI(props:ISellerRegisterPageUIProps):J
                                 ]}
                             />
                             <span className={styles.error}>재배방법을 선택해주세요.</span>
-                        </div>
-                        <div className={styles.registerInputBox}>
-                            <span className={styles.registerInputTitle}>친환경 유무</span>
-                            <Select
-                                style={{ width: 120 }}
-                                defaultValue={''}
-                                // onChange={handleChange}
-                                options={[
-                                  { value: '유기농', label: '유기농' },
-                                  { value: '무농약', label: '무농약' },
-                                  { value: '일반', label: '일반' },
-                                ]}
-                            />
-                            <span className={styles.error}>친환경 유무를 클릭해주세요.</span>
-                        </div>
-                    </div>
-                    <div className={styles.registerBox}>
-                        <div className={styles.registerInputBox}>
-                            <span className={styles.registerInputTitle}>품종</span>
-                            <Select
-                                style={{ width: 120 }}
-                                defaultValue={''}
-                                // onChange={handleChange}
-                                options={[
-                                  { value: '홍고추', label: '홍고추' },
-                                  { value: '청양고추', label: '청양고추' },
-                                  { value: '건고추', label: '건고추' },
-                                ]}
-                            />
-                            <span className={styles.error}>품종을 선택해주세요.</span>
-                        </div>
-                        <div className={styles.registerInputBox}>
-                            <span className={styles.registerInputTitle}>수확량</span>
-                            <div className={styles.registerInputForm}>
-                                <Select
-                                    style={{ width: 120 }}
-                                    defaultValue={''}
-                                    // onChange={handleChange}
-                                    options={[
-                                      { value: '근', label: '근' },
-                                      { value: 'kg', label: 'kg' },
-                                    ]}
-                                />
-                                <input className={styles.registerInput} placeholder='단위 선택 후 수확량을 입력해주세요.' type='text'/>
-                            </div>
-                            <span className={styles.error}>품종을 선택해주세요.</span>
                         </div>
                     </div>
                 </div>

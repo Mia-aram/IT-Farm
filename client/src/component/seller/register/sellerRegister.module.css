@@ -31,8 +31,13 @@
 }
 
 .registerSection1{
-    height: 250px;
     display: flex;
+}
+
+@media (max-width: 480px) {
+    .registerSection1{
+        flex-direction: column;
+    }
 }
 
 .registerBox{
@@ -42,11 +47,23 @@
     flex-direction: column;
 }
 
+@media (max-width:480px) {
+    .registerBox{
+        width: 100%;
+    }
+}
+
 .registerInputBox {
     display: flex;
     flex-direction: column;
     gap: 15px;
     height: 50%;
+}
+
+@media (max-width:480px) {
+    .registerInputBox{
+        margin-bottom: 10px;
+    }
 }
 
 .registerInputTitle{
@@ -55,7 +72,7 @@
 
 @media (max-width: 480px) {
     .registerInputTitle{
-        font-size: 20px;
+        font-size: 23px;
     }
 }
 
@@ -67,7 +84,9 @@
 
 @media (max-width: 480px) {
     .registerInput{
-        font-size: 12px;
+        width: 100%;
+        font-size: 18px;
+        height: 40px;
     }
 }
 
@@ -83,7 +102,7 @@
 
 @media (max-width:480px) {
     .error{
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -121,26 +140,34 @@
     transform: scale(1.0);
 }
 
+@media (max-width:480px) {
+    .searchButton{
+        height: 40px;
+    }
+}
+
 .reigsterAddress1{
-    width: 550px;
+    width: 50%;
     height: 30px;
     font-size: 20px;
 }
 
 @media (max-width:480px) {
     .reigsterAddress1{
+        width: 100%;
         height: 40px;
     }
 }
 
 .reigsterAddress2{
-    width: 100%;
+    width: 50%;
     height: 30px;
     font-size: 20px;
 }
 
 @media (max-width: 480px) {
     .reigsterAddress2{
+        width: 100%;
         height: 40px;
     }
 }

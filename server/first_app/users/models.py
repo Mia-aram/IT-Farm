@@ -59,7 +59,12 @@ class User(AbstractBaseUser, PermissionsMixin):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     nickname = models.CharField(max_length=100, unique=True, null=False)
-    user_type = models.CharField(max_length=100, null=False)
+    USER_TYPE_CHOICES = [
+        ('seller','Seller'),
+        ('buyer','Buyer'),
+        ('admin','Admin'),
+    ]
+    user_type = models.CharField(max_length=100, null=False, choices=USER_TYPE_CHOICES)
     mail_number = models.IntegerField(null=True)
     address = models.CharField(max_length=100, null=True)
     address_detail = models.CharField(max_length=100, null=True)

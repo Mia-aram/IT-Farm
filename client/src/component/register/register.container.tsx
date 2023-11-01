@@ -44,10 +44,11 @@ export default function RegisterPage(): JSX.Element {
                 email : email,
                 password : password,
             })
-            localStorage.setItem('nickname', response.data.nickname)
+            localStorage.setItem('nickname', response.data.user.nickname)
             localStorage.setItem('loginState', 'true')
+            localStorage.setItem('accesstoken', response.data.access)
+            axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.access}`
             setLocalLogin(true)
-            console.log(response)
             if (localStorage.getItem('userState') === 'buyer') {
                 router.push('/purchase')
                 return
